@@ -1,4 +1,4 @@
-﻿window.addEventListener("error", function(e) { console.log("TWKT SYS_error : ", e.message, " at ", e.filename, ":", e.lineno);});
+window.addEventListener("error", function(e) { console.log("TWKT SYS_error : ", e.message, " at ", e.filename, ":", e.lineno);});
 window.addEventListener("unhandledrejection", function(e) { console.log("TWKT SYS_rejected : unhandled rejection", e.reason);});
 
 
@@ -1746,7 +1746,7 @@ function v9375663()
 {
 	v9352963 = false;
 
-	if(JS_DATA.ucAzkar5minPicture == 1)
+	if(JS_DATA.ucAzkar10minPicture == 1)
 	{
 		v9333263();
 		return;
@@ -1771,14 +1771,14 @@ if(JS_DATA.ucAzkarBGwhite) nbrBG = 1;
 		}
 		else
 		{
-		document.getElementById('v9482163').style.backgroundImage = "url(./azkar/azkar5min-hr-"+nbrBG+".jpg)";
-		document.getElementById('v9480263').style.backgroundImage = "url(./azkar/azkar5min-vr-"+nbrBG+".jpg)";
+		document.getElementById('v9482163').style.backgroundImage = "url(./azkar/azkar10min-hr-"+nbrBG+".jpg)";
+		document.getElementById('v9480263').style.backgroundImage = "url(./azkar/azkar10min-vr-"+nbrBG+".jpg)";
 		}
 
 
 
    
-	if(JS_5minAzkarSemiTransparent == 1)
+	if(JS_10minAzkarSemiTransparent == 1)
 	{
 	v9390963('v9480263');
 	v9390963('v9482163');
@@ -1789,7 +1789,7 @@ if(JS_DATA.ucAzkarBGwhite) nbrBG = 1;
 	v9402563('v9482163');
 	}
 
-	setTimeout("v9380363()", (60000 * 5)); 
+	setTimeout("v9380363()", (60000 * 10)); 
 }
 
 
@@ -4516,7 +4516,7 @@ v9364663 = v9364663.concat(v9366663);
 
 function v9328163()
 {
-	JS_DATA.ucAzkar5minPicture = +(!JS_DATA.ucAzkar5minPicture);
+	JS_DATA.ucAzkar10minPicture = +(!JS_DATA.ucAzkar10minPicture);
 	v9415763();
 	v9392763();
 }
@@ -4532,7 +4532,7 @@ function v9350363()
 
 function v9392763()
 {
-	v9345663.checked = (JS_DATA.ucAzkar5minPicture == 1);
+	v9345663.checked = (JS_DATA.ucAzkar10minPicture == 1);
 	document.getElementById('v9383263').checked = (JS_DATA.ucAzkarBGwhite == 1);
 }
 

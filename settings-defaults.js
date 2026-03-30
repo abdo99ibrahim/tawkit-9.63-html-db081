@@ -24,7 +24,7 @@ ucIshaScreenSaver: 0,
 ucDohrXminutesAsr: 0,
 ucJomoaOnHRscreen: 0,
 ucJomoaFixedTime: 'AUTO',
-ucAzkar5minPicture: 0,
+ucAzkar10minPicture: 0,
 ucAzkarBGwhite: 0,
 ucVrNamesInMiddle: 0,
 ucScreenFont: 'Amiri',
@@ -122,7 +122,7 @@ ucRepeatMainAzkarOnce: 0,   // azkar repeating on screen,    0 = norepeat  ,  1 
 
 //----------------------------------------------------------------------
 //--------- INTERNAL MANUAL SETTINGS ------------------------------
-const JS_5minAzkarSemiTransparent = 1;      // make background of Azkar picture semi-transparent  0 or 1
+const JS_10minAzkarSemiTransparent = 1;      // make background of Azkar picture semi-transparent  0 or 1
 
 const JS_MainAzkarViewTime	= 18; // 18 seconds of viewing each main Azkar
 const JS_SabahMasaaViewTime	= 25; // 25 seconds of viewing each Azkar Sabah/Masaa
