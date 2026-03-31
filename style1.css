@@ -1,6 +1,7 @@
 @media only screen and (orientation:landscape) 
 {
 
+	#v9451863, #v9453063 { display: none !important; }
 
 	#v9466063 {
 		position: absolute;
@@ -1898,6 +1899,14 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 	.v9484863 #v9436063:lang(UG){
 	top:10.1%; 
 	font-size:6.0vw;
+	}
+
+	.v9484863 #v9435963 {
+		top: 1.2%; 
+		left: auto;
+		right: 3%;
+		width: 70%;
+		text-align: right;
 	}
 
 	
