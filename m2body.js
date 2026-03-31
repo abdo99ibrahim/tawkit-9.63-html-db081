@@ -2554,7 +2554,7 @@ function v9363963()
 
 	v9353963.innerHTML = v9486463;
 
-	v9415863.innerHTML = v9336663 + v9474463 + v9376963;
+	v9415863.innerHTML = JS_DATA.ucMosqueName + v9474463 + v9376963;
 	v9443263.innerHTML = v9336663;
 	v9443363.innerHTML = v9376963;
 	v9330763.innerHTML = v9336663;
@@ -7621,7 +7621,7 @@ v9352763();
 function v9365063()
 {
 
-if(v9415863.innerHTML.indexOf(v9420463) < 0) v9328463 = true;
+if(v9415863.innerHTML.indexOf(v9420463) < 0 && v9415863.innerHTML.indexOf(JS_DATA.ucMosqueName) < 0) v9328463 = true;
 if(v9443263.innerHTML.indexOf(v9420463) < 0) v9328463 = true;
 if(v9443363.innerHTML.indexOf('&nbsp;') < 0) v9328463 = true;
 
