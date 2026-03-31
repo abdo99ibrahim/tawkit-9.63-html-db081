@@ -830,7 +830,7 @@ const v9472763 = document.getElementById('v9494663');
 function v9364163()
 {
 if(v9472863) return;
-setTimeout(v9325863, 0, v9499163(v9330963), 0.15);
+// setTimeout(v9325863, 0, v9499163(v9330963), 0.15);
 }
 
 
@@ -8753,7 +8753,7 @@ v9364163();
 v9363963();
 
 v9347363();
-document.title = jcTawkitVersionSTR;
+document.title = JS_DATA.ucMosqueName;
 v9368063();
 
 
