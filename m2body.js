@@ -705,23 +705,52 @@ function v9375363(v9459063, v9389363, v9444563)
 {
 	return new Promise((resolve, reject) =>
 	{
-		
 		const v9459163 = new FileReader();
-		
 		v9459163.onload = function(event)
 		{
+			const v9459263 = event.target.result;
+			const v9459363 = new Image();
+			
+			v9459363.onload = function()
+			{
+				const v9459463 = document.createElement('canvas');
+				let v9459563 = v9459363.width;
+				let v9459663 = v9459363.height;
+				
+				const v9459763 = 1920; 
+				if (v9459563 > v9459763 || v9459663 > v9459763)
+				{
+					if (v9459563 > v9459663)
+					{
+						v9459663 *= v9459763 / v9459563;
+						v9459563 = v9459763;
+					}
+					else
+					{
+						v9459563 *= v9459763 / v9459663;
+						v9459663 = v9459763;
+					}
+				}
+				
+				v9459463.width = v9459563;
+				v9459463.height = v9459663;
+				
+				const v9459863 = v9459463.getContext('2d');
+				v9459863.drawImage(v9459363, 0, 0, v9459563, v9459663);
+				
+				const v9459963 = v9459463.toDataURL('image/jpeg', 0.8);
+				
 				try
 				{
-					const v9459263 = event.target.result;
-					localStorage.setItem(v9389363, v9459263);
-					v9389163[v9444563] = v9459263;
+					localStorage.setItem(v9389363, v9459963);
+					v9389163[v9444563] = v9459963;
 					resolve(v9389363);
 				}
 				catch (error)
 				{
 					if (error.name === 'QuotaExceededError')
 					{
-						v9444463('ERROR: Storage quota exceeded! Use image size should be less than 1MB max.');
+						v9444463('ERROR: Storage quota exceeded! Total storage used should be less than 5MB max.');
 						v9364063();
 					}
 					else
@@ -730,13 +759,10 @@ function v9375363(v9459063, v9389363, v9444563)
 					}
 				}
 			};
-			
-			v9459163.onerror = function(error)
-			{
-				v9444463('ERROR reading file:', error);
-			};
-		
-	v9459163.readAsDataURL(v9459063);
+			v9459363.src = v9459263;
+		};
+		v9459163.onerror = (error) => v9444463('ERROR reading file:', error);
+		v9459163.readAsDataURL(v9459063);
 	});
 }
 
@@ -1450,6 +1476,11 @@ function v9346263()
 	if((v9339963 == 0) && (JS_DATA.ucAzkarSabahOn == 1) && (v9324663))
 	{
 		v9402763(v9389863, false, true);
+	}
+	else
+	if((v9339963 == 2) && (v9324663))
+	{
+		v9402763(v9389963, false, false);
 	}
 	else
 	if((v9339963 == 3) && (JS_DATA.ucAzkarAsrOn == 1) && (v9324663))
@@ -2213,6 +2244,7 @@ function v9485663(v9346863)
 		{
 		v9338063();
 		v9340863();
+		v9324363();
 		}
 	}
 	else
