@@ -2027,10 +2027,10 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 
 	#v9380463 {
 		position: absolute;
-		left: 32.5%;
-		top: 8.1%;
-		width: 35.0vw;
-		height: 35.0vw;
+		/*left: 32.5%;*/
+		top: 10%;
+		width: 33.0vw;
+		height: 33.0vw;
 		z-index:1000;
 		background-color: rgba(0,0,0, 0.90); 
 		border-radius: 50%;
@@ -2321,7 +2321,7 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 	.v9484963 #v9380063 {top: 49.0%;}
 	
 	.v9484863 #v9380463 {top:var(--vrCounterTOP); left:var(--vrCounterLEFT); }
-	.v9484963 #v9380463 {top:39.5%;}
+	.v9484963 #v9380463 {top:37.3%; left: 6.8%; width: 30vh; height: 30vh;}
 	
 
 	#v9465363 {

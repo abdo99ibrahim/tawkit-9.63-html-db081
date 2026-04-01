@@ -4085,8 +4085,8 @@ if((v9329863) && (JS_DATA.ucForcedVertical > 0)) v9329863 = false;
 
 		if(JS_DATA.ucMiniCounterOnLeftInVR == 1) 
 		{
-		v9484063.style.setProperty('--vrCounterTOP', '15.0%');
-		v9484063.style.setProperty('--vrCounterLEFT', '5.9%');
+		v9484063.style.setProperty('--vrCounterTOP', '18.0%');
+		v9484063.style.setProperty('--vrCounterLEFT', '3%');
 		}
 }
 
