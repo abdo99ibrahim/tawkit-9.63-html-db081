@@ -883,7 +883,7 @@ li {
 #v9493063 {right:35%; top:1.2%; width:30%; font-size:6rem; text-align:center;}
 #v9506563, #v9492963 {right:1%; top:1.2%; width:30%; font-size:300%; text-align:right;}
 
-#v9492663 {right:0.4%; top:1.0%; width:22%; font-size:6rem; text-align:center; background:#00000057; border-radius: 10%;}
+#v9492663 {right:0.4%; top:0.5%; width:22%; font-size:6rem; text-align:center; background: rgba(0, 0, 0, 0.82); border-radius: 10%; box-shadow: 0 0 1.5vw rgba(0, 0, 0, 0.3);}
 #v9504563 {right:2%; top:1.0%; width:30%; font-size:6rem; text-align:right;}
 #v9492563 {right:2%; top:1.0%; width:30%; font-size:300%; text-align:right;}
 
