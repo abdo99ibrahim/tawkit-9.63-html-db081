@@ -2174,8 +2174,8 @@ function v9485663(v9346863)
 	v9443063.innerHTML = v9431863;
 	v9429563.innerHTML = v9431863;
 	v9429663.innerHTML = v9431863;
-	v9429763.innerHTML = v9431863;
-	v9429863.innerHTML = v9431863;
+	v9429763.innerHTML = v9431863_blink;
+	v9429863.innerHTML = v9431863_blink;
 
 
 
@@ -7889,7 +7889,7 @@ function v9356363()
 	document.getElementById('v9361463').innerHTML = JS_eLang.cx_RamadanDaysLeftInfo;
 	document.getElementById('v9396763').innerHTML = JS_eLang.cx_HIDE_IQAMAT;
 	document.getElementById('v9411163').innerHTML = JS_eLang.cx_ZEROS_AMPM;
-	document.getElementById('v9396363').innerHTML = JS_eLang.cx_5BOXES_ONLY;
+	document.getElementById('v9396363').innerHTML = JS_eLang.cx_10BOXES_ONLY;
 	document.getElementById('v9407163').innerHTML = JS_eLang.cx_IQAMAT_SALAT;
 	document.getElementById('v9409363').innerHTML = JS_eLang.cx_IQAMAT_SALAT;
 	document.getElementById('v9368763').innerHTML = JS_eLang.cx_DohaTime;

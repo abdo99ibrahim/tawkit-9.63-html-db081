@@ -38,7 +38,7 @@ cx_DIMMER_1             : "Blackout screen 30 minuto pagkatapos ng pagsikat ng a
 cx_DIMMER_2             : "Blackout screen 60 minuto pagkatapos ng Isha",
 cx_DIMMER_3             : "Blackout screen bago ang Dhuhr",
 cx_DIMMER_4             : "Ipakita ang screen pagkatapos ng Dhuhr",
-cx_DIMMER_10             : "Tagal ng pagdarasal para sa screen blackout",
+cx_DIMMER_5             : "Tagal ng pagdarasal para sa screen blackout",
 cx_AZKAR_4              : "Ipakita ang isang imahe lamang sa nakatakdang 10 minuto",
 cx_TIMES_2              : "Piliin ang bansa at lungsod ng mosque",
 cx_TIMES_3              : "Upang baguhin o magdagdag ng taunang oras ng pagdarasal",

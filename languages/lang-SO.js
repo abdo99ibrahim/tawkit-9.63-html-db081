@@ -38,7 +38,7 @@ cx_DIMMER_1             : "Madow ka dhig shaashadda 30 daqiiqo kadib qorrax soo 
 cx_DIMMER_2             : "Madow ka dhig shaashadda 60 daqiiqo kadib Isha",
 cx_DIMMER_3             : "Madow ka dhig shaashadda ka hor Zuhr",
 cx_DIMMER_4             : "Muuji shaashadda kadib Zuhr",
-cx_DIMMER_10             : "Muddada salaadda ee madowga shaashadda",
+cx_DIMMER_5             : "Muddada salaadda ee madowga shaashadda",
 cx_AZKAR_4              : "Muuji hal sawir kaliya muddo 10 daqiiqo ah",
 cx_TIMES_2              : "Xulo dalka iyo magaalada masaajidka",
 cx_TIMES_3              : "Si aad u beddesho ama ku darto wakhtiyada sanadlaha ah ee salaadaha",

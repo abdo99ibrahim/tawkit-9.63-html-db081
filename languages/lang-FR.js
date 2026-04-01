@@ -38,7 +38,7 @@ cx_DIMMER_1             : "Noir de l'écran 30 minutes après le lever du soleil
 cx_DIMMER_2             : "Noir de l'écran 60 minutes après Isha",
 cx_DIMMER_3             : "Noir de l'écran avant Dhuhr",
 cx_DIMMER_4             : "Afficher l'écran après Dhuhr",
-cx_DIMMER_10             : "Durée de la prière pour le noir de l'écran",
+cx_DIMMER_5             : "Durée de la prière pour le noir de l'écran",
 cx_AZKAR_4              : "Afficher une seule image pour une durée fixe de 10 minutes",
 cx_TIMES_2              : "Sélectionner le pays et la ville de la mosquée",
 cx_TIMES_3              : "Pour modifier ou ajouter les horaires annuels des prières",

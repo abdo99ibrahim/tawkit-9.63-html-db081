@@ -38,7 +38,7 @@ cx_DIMMER_1             : "Bahaa aduu booda daqiiqaa 30n iskiriinii dukkaneessi"
 cx_DIMMER_2             : "Ishaa booda daqiiqaa 60n iskiriinii dukkaneessi",
 cx_DIMMER_3             : "Dhuhr dura iskiriinii dukkaneessi",
 cx_DIMMER_4             : "Dhuhr booda iskiriinii mul'isi",
-cx_DIMMER_10             : "Yeroo dukkana iskiriinii salaataa",
+cx_DIMMER_5             : "Yeroo dukkana iskiriinii salaataa",
 cx_AZKAR_4              : "Suuraa tokko qofa yeroo murtaa'e daqiiqaa 10f agarsiisi",
 cx_TIMES_2              : "Biyya fi magaalaa Masjiidaa filadhu",
 cx_TIMES_3              : "Yeroo salaataa waggaa gulaaluuf yookaan dabaluuf",
