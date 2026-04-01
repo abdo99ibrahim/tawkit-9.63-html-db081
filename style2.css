@@ -703,14 +703,14 @@
 
 	#v9406963 {
 		position: absolute;
-		left: 30%;
-		top: 18%;
-		width: 40%;
+		left: 10%;
+		top: 15%;
+		width: 80%;
 		text-align: center;
 		font-family: var(--fnDIGITS);
 		letter-spacing: 0.085em;
 		line-height: 1em;
-		font-size: 7vh;
+		font-size: 11vh;
 		color: var(--esCLOCK);
 	}
 

@@ -951,3 +951,16 @@ li {
 }
 
 
+
+@keyframes blink-colon-anim {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink-colon {
+    animation: blink-colon-anim 1s step-start infinite;
+    display: inline-block;
+    width: 0.3em; /* Ensure consistent spacing */
+    text-align: center;
+}

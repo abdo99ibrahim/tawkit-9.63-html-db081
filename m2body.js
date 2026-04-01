@@ -1980,8 +1980,8 @@ function v9442063()
 
 	if(v9391063)
 	{
-	v9391163.innerHTML = v9431863;
-	v9391263.innerHTML = v9431863;
+	v9391163.innerHTML = v9431863_blink;
+	v9391263.innerHTML = v9431863_blink;
 	}
 	
 	
@@ -2103,6 +2103,7 @@ let v9331363 = 0;
 
 let v9353763 = false;
 let v9431863 = "00:00";
+let v9431863_blink = "00:00";
 
 
 
@@ -2129,8 +2130,10 @@ function v9485663(v9346863)
 
 
 	let v9474163 = v9510763 + ':' + v9510863;
+	let v9474163_blink = v9510763 + "<span class='blink-colon'>:</span>" + v9510863;
 
 	let v9431963 = v9474163;
+	let v9431963_blink = v9474163_blink;
 	let v9445863 = '&nbsp;';
 
 
@@ -2143,16 +2146,19 @@ function v9485663(v9346863)
 			v9445863 = v9445663;
 			if(v9473963 > 12) v9473963 = v9473963 - 12;
 			v9431963 = v9473963 + ':' + v9474063;
+			v9431963_blink = v9473963 + "<span class='blink-colon'>:</span>" + v9474063;
 		}
 		else
 		{
 			if(v9473963 == 0) v9473963 = 12;
 			v9445863 = v9445563;
 			v9431963 = v9473963 + ':' + v9474063;
+			v9431963_blink = v9473963 + "<span class='blink-colon'>:</span>" + v9474063;
 		}
 	}
 
 	v9431863 = v9431763(v9431963);
+	v9431863_blink = v9431763(v9431963_blink);
 	
 	v9387663.innerHTML = v9431863;
 	v9387563.innerHTML = v9431863;
