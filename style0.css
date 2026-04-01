@@ -884,7 +884,8 @@ li {
 #v9506563, #v9492963 {right:1%; top:1.2%; width:30%; font-size:300%; text-align:right;}
 
 #v9492663 {right:0.4%; top:1.0%; width:22%; font-size:6rem; text-align:center; background:#00000057; border-radius: 10%;}
-#v9504563, #v9492563 {right:2%; top:1.0%; width:30%; font-size:300%; text-align:right;}
+#v9504563 {right:2%; top:1.0%; width:30%; font-size:6rem; text-align:right;}
+#v9492563 {right:2%; top:1.0%; width:30%; font-size:300%; text-align:right;}
 
 
 
