@@ -28,8 +28,6 @@
 		  }
 
 
-
-
 	:root {
 		--vTXT_SHDW: 0.4vh 0.4vh 0.3vh rgba(0, 0, 0, 0.2);
 		--vCLK_SHDW: 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.3);
@@ -125,11 +123,11 @@
 	#v9436063 {
 		position: absolute;
 		left: 4%;
-		top: 7.1%;
+		top: 6.5%;
 		width: 92%;
 		font-size: 5.7vh;
 		z-index: var(--BsDate500);
-		line-height: 1.40em;
+		line-height: 1.25em;
 		direction: ltr;
 		text-align: center;
 		font-family: var(--csvar_mainFONT);
@@ -144,7 +142,7 @@
 	#v9436063:lang(PS),
 	#v9436063:lang(FA),
 	#v9436063:lang(UG){
-		line-height: 1.6em;
+		line-height: 1.35em;
 		font-size: 6.6vh;
 		direction: rtl;
 	}
@@ -155,6 +153,7 @@
 		left: 69.4%;
 		top: 21.75%;
 		text-align: left;
+		direction: rtl;
 		font-size: 4.8vh;
 		line-height: 1;
 		letter-spacing: 0.065em;

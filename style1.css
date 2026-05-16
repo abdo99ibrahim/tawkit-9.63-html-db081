@@ -1465,7 +1465,7 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 		--vAyatSHDW: 0.4vw 0.4vw 0.4vw rgba(0, 0, 0, 0.3);
 	}
 
-
+	#v9451863, #v9453063 { display: none !important; }
 	#v9465063 {
 		position: absolute;
 		left: 0;
@@ -1553,11 +1553,11 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 	#v9436063 {
 		position: absolute;
 		left: 4%;
-		top: 7.1%;
+		top: 6.5%;
 		width: 92%;
 		font-size: 5.7vw;
 		z-index: var(--BsDate500);
-		line-height: 1.40em;
+		line-height: 1.25em;
 		direction: ltr;
 		text-align: center;
 		font-family: var(--csvar_mainFONT);
@@ -1572,13 +1572,14 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 	#v9436063:lang(PS),
 	#v9436063:lang(FA),
 	#v9436063:lang(UG){
-		line-height: 1.6em;
+		line-height: 1.35em;
 		font-size: 6.6vw;
 		direction: rtl;
 	}
 
 	#v9436163 {
 		position: absolute;
+		direction: rtl;
 		width: 40%;
 		left: 69.4%;
 		top: 21.75%;
@@ -1614,8 +1615,8 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 	#v9421663 {
 		position: absolute;
 		left: 36%;
-		top: 13.5%;
-		width: 28%;
+		top: 12.5%;
+		width: 25%;
 		z-index: 600;
 		opacity: 1;
 		transition: all .5s ease-out;
@@ -1653,7 +1654,7 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 
 	#v9421763 {
 		position: absolute;
-		left: 72.5%;
+		left: 73.5%;
 		top: 15.1%;
 		width: 20%;
 		height: 7%;
@@ -1717,7 +1718,7 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 		line-height: 1em;
 		letter-spacing: 0.085em;
 		font-family: var(--fnCLOKEN);
-		font-size: 19.3vh;
+		font-size: 19.3vw;
 		left: 0%;
 		top: 0%;
 		width: 100%;
@@ -1884,8 +1885,8 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 	.v9484963 #v9379863 {top: 19.0%;}
 
 		
-	.v9484863 #v9421663 {top: 20.0%;}
-	.v9484963 #v9421663 {top: 38.8%; left:38%; width:24%; opacity: var(--izBigCNTR);}
+	.v9484863 #v9421663 {top: 21.0%;}
+	.v9484963 #v9421663 {top: 37.8%; left:38%; width:24%; opacity: var(--izBigCNTR);}
 
 	.v9484863 #v9436063 {top: 12.7%;}
 	
@@ -2059,7 +2060,7 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 		width: 90%;
 		height: 40%;
 		line-height: 1em;
-		font-size: 11.0vw;
+		font-size: 9.0vw;
 		color: var(--esSALATS);
 		font-family: var(--fnDIGITS);
 		text-align: center;
@@ -2071,8 +2072,8 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 		bottom:0%;
 		line-height: 1em;
 		width: 90%;
-		height: 30%;
-		font-size: 3.9vw;
+		height: 34%;
+		font-size: 3.5vw;
 		color: var(--esLOWER);
 		font-family: var(--csvar_mainFONT);
 		direction: var(--csvar_nowDIR);
@@ -2321,7 +2322,7 @@ button {margin-top:5%; width:60%; font-size:2vw; padding:2%;}
 	.v9484963 #v9380063 {top: 49.0%;}
 	
 	.v9484863 #v9380463 {top:var(--vrCounterTOP); left:var(--vrCounterLEFT); }
-	.v9484963 #v9380463 {top:37.3%; left: 6.8%; width: 30vh; height: 30vh;}
+	.v9484963 #v9380463 {top:37.3%; left: 6.8%; width: 27vw; height: 27vw;}
 	
 
 	#v9465363 {

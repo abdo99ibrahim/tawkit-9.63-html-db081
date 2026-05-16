@@ -895,12 +895,12 @@ li {
 #v9492863 {
     position: absolute;
     left: 1.5%;
-    top: 5%;
-    width: 5.5%;
+    bottom: 0.5%;
+    width: 4.5%;
     border-radius: 50%;
     opacity: 0.8;
     z-index: var(--ForAzkarON_zedex);
-    visibility:var(--PSFLG);
+    visibility: var(--PSFLG);
 }
 #v9493263 {
     position: absolute;

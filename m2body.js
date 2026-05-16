@@ -1820,7 +1820,20 @@ if(JS_DATA.ucAzkarBGwhite) nbrBG = 1;
 	v9402563('v9482163');
 	}
 
-	setTimeout("v9380363()", (60000 * 10)); 
+	let duration = 10;
+	let prayIdx = v9339963;
+	let key = "";
+	if (v9353763 && prayIdx == 2) key = "ucAzkarDurationJOMOA";
+	else if (prayIdx == 0) key = "ucAzkarDurationFAJR";
+	else if (prayIdx == 1) key = "ucAzkarDurationSHRQ";
+	else if (prayIdx == 2) key = "ucAzkarDurationDOHR";
+	else if (prayIdx == 3) key = "ucAzkarDurationASSR";
+	else if (prayIdx == 4) key = "ucAzkarDurationMGRB";
+	else if (prayIdx == 5) key = "ucAzkarDurationISHA";
+	
+	if(key && JS_DATA[key]) duration = JS_DATA[key];
+	
+	setTimeout("v9380363()", (60000 * duration)); 
 }
 
 
@@ -3648,7 +3661,7 @@ v9376863.ISHA = v9485963;
 
 function v9366063()
 {
-	v9335563.innerHTML = "<span id='v9508463'>" +v9458863 + "</span>" + " " + v9404563 + " . " + v9417963;
+	v9335563.innerHTML = "<span id='v9508463'>" + v9458863 + "</span>" + " " + v9404563 + " . " + v9417963;
 }
 
 
@@ -4572,6 +4585,7 @@ function v9392763()
 {
 	v9345663.checked = (JS_DATA.ucAzkar10minPicture == 1);
 	document.getElementById('v9383263').checked = (JS_DATA.ucAzkarBGwhite == 1);
+	v_initAzkarDur();
 }
 
 
@@ -8866,3 +8880,62 @@ window.addEventListener('load', async () => {
 	v9417263();
 });
 
+
+function v_initAzkarDur() {
+    for (let i = 0; i < 7; i++) {
+        let nameEl = document.getElementById('v_azkar_n' + i);
+        let valEl = document.getElementById('v_azkar_d' + i);
+        if (nameEl) {
+            if (i < 6) nameEl.innerHTML = v9364263[i];
+            else nameEl.innerHTML = v9365863[5]; // الجمعة
+        }
+        if (valEl) {
+            let key = "";
+            if (i == 0) key = "ucAzkarDurationFAJR";
+            else if (i == 1) key = "ucAzkarDurationSHRQ";
+            else if (i == 2) key = "ucAzkarDurationDOHR";
+            else if (i == 3) key = "ucAzkarDurationASSR";
+            else if (i == 4) key = "ucAzkarDurationMGRB";
+            else if (i == 5) key = "ucAzkarDurationISHA";
+            else if (i == 6) key = "ucAzkarDurationJOMOA";
+            valEl.innerHTML = JS_DATA[key];
+        }
+    }
+}
+
+function v_setAzkarDur(idx) {
+    if (!v9346163) {
+        v9335963 = "";
+        v9346163 = false;
+        let key = "";
+        let lbl = "";
+        if (idx == 0) key = "ucAzkarDurationFAJR";
+        else if (idx == 1) key = "ucAzkarDurationSHRQ";
+        else if (idx == 2) key = "ucAzkarDurationDOHR";
+        else if (idx == 3) key = "ucAzkarDurationASSR";
+        else if (idx == 4) key = "ucAzkarDurationMGRB";
+        else if (idx == 5) key = "ucAzkarDurationISHA";
+        else if (idx == 6) key = "ucAzkarDurationJOMOA";
+        
+        if (idx < 6) lbl = v9364263[idx]; else lbl = v9365863[5];
+
+        v9375463("Azkar Picture Duration (min) | مدة العرض<br>" + lbl, JS_DATA[key], 'v_setAzkarDur(' + idx + ')', true);
+        return;
+    }
+
+    let val = parseInt(v9335963);
+    if (isNaN(val) || val < 1) val = 10;
+    
+    let key = "";
+    if (idx == 0) key = "ucAzkarDurationFAJR";
+    else if (idx == 1) key = "ucAzkarDurationSHRQ";
+    else if (idx == 2) key = "ucAzkarDurationDOHR";
+    else if (idx == 3) key = "ucAzkarDurationASSR";
+    else if (idx == 4) key = "ucAzkarDurationMGRB";
+    else if (idx == 5) key = "ucAzkarDurationISHA";
+    else if (idx == 6) key = "ucAzkarDurationJOMOA";
+    
+    JS_DATA[key] = val;
+    v9415763(); 
+    v_initAzkarDur(); 
+}
