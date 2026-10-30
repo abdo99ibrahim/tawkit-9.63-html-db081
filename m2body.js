@@ -1,3 +1,5 @@
+let v_adShownPrayerIdx = -1;
+let v_adShownDate = "";
 window.addEventListener("error", function(e) { console.log("TWKT SYS_error : ", e.message, " at ", e.filename, ":", e.lineno);});
 window.addEventListener("unhandledrejection", function(e) { console.log("TWKT SYS_rejected : unhandled rejection", e.reason);});
 
@@ -1471,6 +1473,16 @@ let v9353163 = false;
 
 function v9346263()
 {
+	let todayStr = new Date().toDateString();
+	if (v_adShownPrayerIdx !== v9339963 || v_adShownDate !== todayStr) {
+		let prayers = ["FAJR", "SHURUQ", "DHUHR", "ASR", "MAGHRIB", "ISHA"];
+		let currentPrayer = prayers[v9339963];
+		if (typeof checkAndShowAd === 'function' && checkAndShowAd(currentPrayer)) {
+			v_adShownPrayerIdx = v9339963;
+			v_adShownDate = todayStr;
+			return;
+		}
+	}
 
 	
 	if((v9339963 == 0) && (JS_DATA.ucAzkarSabahOn == 1) && (v9324663))
@@ -5384,6 +5396,7 @@ function v9356963()
 {
 	v9337063 = !v9337063;
 	if(v9337063) v9416263('v9493363'); else v9410463('v9493363');
+	if(document.getElementById('modalImageAds')) document.getElementById('modalImageAds').style.visibility = 'hidden';
 }
 
 
@@ -5393,6 +5406,7 @@ function v9424563()
 {
 	v9337063 = !v9337063;
 	v9416263('v9493363');
+	if(document.getElementById('modalImageAds')) document.getElementById('modalImageAds').style.visibility = 'hidden';
 }
 
 
@@ -7769,6 +7783,7 @@ function v9356363()
 	document.getElementById('v9349263').innerHTML 	= v9458963 + JS_eLang.cx_MenuLocation;
 	document.getElementById('v9382063').innerHTML 		= v9458963 + JS_eLang.cx_ShortCUTS;
 	document.getElementById('v9439163').innerHTML 			= v9458963 + JS_eLang.cx_METEO_A;
+	document.getElementById('btnImageAds').innerHTML 		= v9458963 + JS_eLang.cx_MenuImageAds;
 
 	document.getElementById('v9384463').innerHTML 		= JS_eLang.cx_DOHR_XMIN_ASR;
 	document.getElementById('v9370763').innerHTML 		= JS_eLang.cx_MenuThemes;

@@ -133,5 +133,13 @@ cx_ShowNightPrayers 	: "إظهار أوقات صلوات الليل : منتصف
 cx_SoundAlertsReminders	: "تنبيهات صوتية",
 cx_RamadanDaysLeftInfo	: "إدماج المتبقي لرمضان مع الرسائل . (شهرين قبل رمضان)",
 cx_RamadanLeftDays		: "المتبقي لشهر رمضان :",
-
+cx_MenuImageAds			: "إدارة إعلانات الصور",
+cx_ImageAds_Add			: "إضافة إعلان جديد",
+cx_ImageAds_Help		: "يمكنك رفع صور للإعلانات وتحديد وقت عرضها بعد الصلوات المحددة.",
+cx_ImageAds_DateStart	: "تاريخ البدء",
+cx_ImageAds_DateEnd		: "تاريخ الانتهاء",
+cx_ImageAds_Prayers		: "الفروض المحددة",
+cx_ImageAds_Duration	: "المدة (دقائق)",
+cx_ImageAds_FileName	: "اسم ملف الصورة (في مجلد ads)",
+cx_ImageAds_Note		: "ملاحظة: يرجى وضع الصور يدوياً في مجلد ads داخل مجلد التطبيق.",
 }
